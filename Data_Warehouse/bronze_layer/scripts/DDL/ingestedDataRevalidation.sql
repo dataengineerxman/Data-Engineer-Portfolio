@@ -1,11 +1,5 @@
 EXEC bronze.ingest_data;
 
-SELECT t.name, s.name AS schema_name
-FROM sys.tables t
-JOIN sys.schemas s ON t.schema_id = s.schema_id
-WHERE t.name = 'ingest_data_run_history';
-
-
 /*CRM Customer Information Table Revalidation*/
 SELECT COUNT(*) AS TotalRecords FROM bronze.crm_cust_info;
 
