@@ -134,12 +134,10 @@ Data_Warehouse/
 ✅ Full run history table ensures auditability
 ✅ Python integration allows scheduled ETL orchestration
 
-🧭 Next Step
+🧭 Silver Layer
+Clone Bronze Tables into Silver Layer to start Data Transformation and Cleansing.
+Add a dwh_date Metadata field to each Silver Table for SCD Type 2 implementation.
 
-You can now proceed to:
+🧱 Data Analysis
+Check for Nulls and Duplicates in Primary Key in bronze layer tables
 
-Silver Layer → Clean, transform, and standardize data
-
-Gold Layer → Aggregate for analytics and reporting
-
-Automate this process using Python or SQL Server Agent
