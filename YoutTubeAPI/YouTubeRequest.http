@@ -1,4 +1,0 @@
-### GET request to example server
-GET https://youtube.googleapis.com/youtube/v3/videos?part=statistics&id=jlLn7bFlTr0&key=AIzaSyAiQLZrzBvBZ9G-NNWGSQHUDoQVwckJq6s
-
-###

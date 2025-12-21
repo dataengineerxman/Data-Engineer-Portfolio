@@ -1,0 +1,9 @@
+### GET request to example server
+### @env local
+
+GET https://youtube.googleapis.com/youtube/v3/videos
+    ?part=statistics
+    &id=jlLn7bFlTr0
+    &key={{YOUTUBE_API_KEY}}
+
+
