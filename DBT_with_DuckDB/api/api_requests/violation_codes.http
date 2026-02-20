@@ -1,0 +1,6 @@
+### GET request to example server
+
+### Get violation codes with limit
+GET https://data.cityofnewyork.us/resource/ncbg-6agr.json?$limit=10
+
+

@@ -1,0 +1,6 @@
+### GET request to example server
+GET https://data.cityofnewyork.us/resource/869v-vr48.json
+    ?$limit=10
+
+
+###

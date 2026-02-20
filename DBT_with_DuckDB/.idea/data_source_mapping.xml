@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/sql/ddl/001_create_parking_violation_codes.sql" value="76c60c5f-59f4-4a5f-ba4c-9ac72ec2d2cb" />
+    <file url="file://$PROJECT_DIR$/sql/ddl/001_create_parking_violations.sql" value="76c60c5f-59f4-4a5f-ba4c-9ac72ec2d2cb" />
+    <file url="file://$PROJECT_DIR$/sql/dml/query_violations_data.sql" value="76c60c5f-59f4-4a5f-ba4c-9ac72ec2d2cb" />
+  </component>
+</project>

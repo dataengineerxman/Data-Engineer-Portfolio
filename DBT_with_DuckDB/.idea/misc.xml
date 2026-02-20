@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.14 (DBT_with_DuckDB)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (DBT_with_DuckDB)" project-jdk-type="Python SDK" />
+</project>
