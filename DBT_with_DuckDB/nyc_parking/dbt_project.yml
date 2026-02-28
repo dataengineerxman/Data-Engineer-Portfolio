@@ -1,13 +1,9 @@
-# NYC Parking Violations
-# Data Transformation
-name: 'nyc_parking'
+name: 'nyc_parking_violations'
 version: '1.0.0'
 config-version: 2
 
-# This setting configures which "profile" dbt uses for this project.
-profile: 'nyc_parking'
+profile: 'nyc_parking_violations'
 
-# These configurations specify where dbt should look for different types of files.
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -19,17 +15,26 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-# Configuring models
-# We are using a lakehouse-style layering:
-# - bronze: raw-ish structures
-# - silver: cleaned/typed/enriched transformations
-# - gold: curated marts/metrics
-models:
-  nyc_parking:
+on-run-start:
+  - "CREATE SCHEMA IF NOT EXISTS silver;"
+  - "CREATE SCHEMA IF NOT EXISTS gold;"
 
+models:
+  nyc_parking_violations:
     silver:
       +schema: silver
-      +materialized: view
+      bronze_parking_violation_codes:
+        +materialized: ephemeral
+      bronze_parking_violations:
+        +materialized: ephemeral
+      silver_parking_violation_codes:
+        +materialized: ephemeral
+      silver_parking_violations:
+        +materialized: ephemeral
+      silver_violations_tickets:
+        +materialized: view
+      silver_violations_vehicles:
+        +materialized: view
 
     gold:
       +schema: gold

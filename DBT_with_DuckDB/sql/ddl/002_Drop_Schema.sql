@@ -1,0 +1,9 @@
+DROP TABLE nyc_parking_violations.bronze.parking_violations;
+DROP TABLE nyc_parking_violations.bronze.violation_codes;
+DROP SCHEMA nyc_parking_violations.bronze
+
+
+DROP VIEW nyc_parking_violations.silver_silver.bronze_parking_violation_codes
+DROP VIEW nyc_parking_violations.silver_silver.bronze_parking_violations
+DROP SCHEMA nyc_parking_violations.silver_silver
+DROP SCHEMA nyc_parking_violations.silver
