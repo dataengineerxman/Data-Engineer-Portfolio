@@ -37,12 +37,4 @@
     + Descriptions
     + Dependencies
 
-Issues
-INTERNAL Error: Failed to deserialize: expected end of object, but found field id: 101
-DROP TABLE nyc_parking_violations.bronze.parking_violations;
-DROP TABLE nyc_parking_violations.bronze.violation_codes;
-DROP SCHEMA nyc_parking_violations.bronze
-
-Python - Scripts
-Rebuild Schema
-Reingest the Data
+- dbt test
