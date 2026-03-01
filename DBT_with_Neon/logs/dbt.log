@@ -1,0 +1,29 @@
+[0m15:17:55.599849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C85163990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C850F7910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C84E89650>]}
+
+
+============================== 15:17:55.609172 | 78898afa-085b-4e9e-8f8d-68c3c2e8fe9c ==============================
+[0m15:17:55.609172 [info ] [MainThread]: Running with dbt=1.11.6
+[0m15:17:55.610172 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:18:31.717330 [debug] [MainThread]: Starter project path: E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:18:32.399783 [info ] [MainThread]: 
+Your new dbt project "F1_Telemetry" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:18:32.403811 [info ] [MainThread]: Setting up your profile.
+[0m15:22:25.714664 [info ] [MainThread]: Profile F1_Telemetry written to C:\Users\lalin\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:22:25.716662 [debug] [MainThread]: Command `dbt init` succeeded at 15:22:25.716662 after 280.35 seconds
+[0m15:22:25.717661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C85163BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C85108E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C850FD550>]}
+[0m15:22:25.718661 [debug] [MainThread]: Flushing usage events
+[0m15:22:26.839236 [debug] [MainThread]: An error was encountered while trying to flush usage events
