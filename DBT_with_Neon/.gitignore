@@ -1,0 +1,13 @@
+
+# --- Python & Environment ---
+.venv/
+__pycache__/
+.env
+
+# --- IDE ---
+.idea/
+
+# --- Existing dbt rules ---
+target/
+dbt_packages/
+logs/

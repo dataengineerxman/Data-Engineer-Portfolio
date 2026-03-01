@@ -1,0 +1,16 @@
+# --- dbt specific (adjusted for subfolder) ---
+**/target/
+**/dbt_packages/
+**/logs/
+*.db
+*.wal
+
+# --- Python / Environment ---
+.venv/
+__pycache__/
+.env
+
+# --- IDE / OS ---
+.vscode/
+.DS_Store
+Thumbs.db

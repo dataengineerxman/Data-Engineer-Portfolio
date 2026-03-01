@@ -1,0 +1,11 @@
+# Database Connection
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.30
+
+# API & Data Handling
+requests==2.31.0
+pandas==2.2.2
+
+# dbt Core & Adapter
+dbt-core==1.8.2
+dbt-postgres==1.8.2
