@@ -1,0 +1,5 @@
+### GET request to example server
+### GET ALL DRIVERS for Session 9158
+# Removing the driver_number filter returns the full list
+GET https://api.openf1.org/v1/drivers?session_key=9158
+###

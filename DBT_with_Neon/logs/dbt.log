@@ -27,3 +27,281 @@ Happy modeling!
 [0m15:22:25.717661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C85163BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C85108E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C850FD550>]}
 [0m15:22:25.718661 [debug] [MainThread]: Flushing usage events
 [0m15:22:26.839236 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:39:24.800097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026847B5F390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026847B5E3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026847B5F350>]}
+
+
+============================== 10:39:24.807747 | 3e6b0613-6815-4037-8d30-9ebe2d893af1 ==============================
+[0m10:39:24.807747 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:39:24.807747 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:39:24.943892 [info ] [MainThread]: dbt version: 1.8.2
+[0m10:39:24.944891 [info ] [MainThread]: python version: 3.11.9
+[0m10:39:24.945891 [info ] [MainThread]: python path: E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Scripts\python.exe
+[0m10:39:24.946891 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m10:39:24.952937 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m10:39:24.955932 [info ] [MainThread]: target not specified in profile 'target', using 'default'
+[0m10:39:24.959447 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m10:39:24.960986 [info ] [MainThread]: target not specified in profile 'host', using 'default'
+[0m10:39:24.962731 [info ] [MainThread]: target not specified in profile 'user', using 'default'
+[0m10:39:24.963730 [info ] [MainThread]: target not specified in profile 'password', using 'default'
+[0m10:39:24.965730 [error] [MainThread]: Encountered an error:
+argument of type 'int' is not iterable
+[0m10:39:24.995047 [error] [MainThread]: Traceback (most recent call last):
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\main.py", line 406, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\task\debug.py", line 120, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\task\debug.py", line 211, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 403, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 369, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 315, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 274, in render_profile
+    elif "target" in raw_profile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+[0m10:39:24.997048 [debug] [MainThread]: Command `dbt debug` failed at 10:39:24.997048 after 0.31 seconds
+[0m10:39:24.998048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026847B1DD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026847B4CD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026847B13290>]}
+[0m10:39:24.998048 [debug] [MainThread]: Flushing usage events
+[0m10:41:53.114633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A9AA179D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A9AA14C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A9AA5BD90>]}
+
+
+============================== 10:41:53.119144 | bf3a905c-e8d5-47b9-af97-5c2f427b8b71 ==============================
+[0m10:41:53.119144 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:41:53.120660 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:41:53.140175 [info ] [MainThread]: dbt version: 1.8.2
+[0m10:41:53.140734 [info ] [MainThread]: python version: 3.11.9
+[0m10:41:53.141740 [info ] [MainThread]: python path: E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Scripts\python.exe
+[0m10:41:53.142740 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m10:41:53.149248 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m10:41:53.151383 [info ] [MainThread]: target not specified in profile 'target', using 'default'
+[0m10:41:53.153392 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m10:41:53.154390 [info ] [MainThread]: target not specified in profile 'host', using 'default'
+[0m10:41:53.156390 [info ] [MainThread]: target not specified in profile 'user', using 'default'
+[0m10:41:53.157488 [info ] [MainThread]: target not specified in profile 'password', using 'default'
+[0m10:41:53.158994 [error] [MainThread]: Encountered an error:
+argument of type 'int' is not iterable
+[0m10:41:53.162060 [error] [MainThread]: Traceback (most recent call last):
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\main.py", line 406, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\task\debug.py", line 120, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\task\debug.py", line 211, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 403, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 369, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 315, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 274, in render_profile
+    elif "target" in raw_profile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+[0m10:41:53.163059 [debug] [MainThread]: Command `dbt debug` failed at 10:41:53.163059 after 0.16 seconds
+[0m10:41:53.163059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A9A61D250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A9AAFF550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A9AA1DC10>]}
+[0m10:41:53.164058 [debug] [MainThread]: Flushing usage events
+[0m10:44:54.112706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000165E3937890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000165E6B352D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000165E77B2990>]}
+
+
+============================== 10:44:54.117706 | 7f41b119-52f7-46a9-aaf5-107a7ed898ec ==============================
+[0m10:44:54.117706 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:44:54.119211 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:44:54.139254 [info ] [MainThread]: dbt version: 1.8.2
+[0m10:44:54.140305 [info ] [MainThread]: python version: 3.11.9
+[0m10:44:54.140810 [info ] [MainThread]: python path: E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Scripts\python.exe
+[0m10:44:54.141818 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m10:44:54.144242 [info ] [MainThread]: target not specified in profile 'target', using 'default'
+[0m10:44:54.147239 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m10:44:54.148239 [info ] [MainThread]: target not specified in profile 'path', using 'default'
+[0m10:44:54.149746 [info ] [MainThread]: target not specified in profile 'schema', using 'default'
+[0m10:44:54.151257 [error] [MainThread]: Encountered an error:
+argument of type 'int' is not iterable
+[0m10:44:54.155264 [error] [MainThread]: Traceback (most recent call last):
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\main.py", line 406, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\task\debug.py", line 120, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\task\debug.py", line 211, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 403, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 369, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 315, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 274, in render_profile
+    elif "target" in raw_profile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+[0m10:44:54.157266 [debug] [MainThread]: Command `dbt debug` failed at 10:44:54.156264 after 0.16 seconds
+[0m10:44:54.157266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000165E77C9790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000165E77C9990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000165E0EA5C50>]}
+[0m10:44:54.158263 [debug] [MainThread]: Flushing usage events
+[0m10:48:37.826674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D177FF710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D177FD990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D177FFF90>]}
+
+
+============================== 10:48:37.830187 | 56a054bd-0759-46c3-8f69-b106a5bf494e ==============================
+[0m10:48:37.830187 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:48:37.830187 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:48:37.842596 [info ] [MainThread]: dbt version: 1.8.2
+[0m10:48:37.842596 [info ] [MainThread]: python version: 3.11.9
+[0m10:48:37.843592 [info ] [MainThread]: python path: E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Scripts\python.exe
+[0m10:48:37.843592 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m10:48:37.845594 [info ] [MainThread]: target not specified in profile 'target', using 'default'
+[0m10:48:37.846595 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m10:48:37.847592 [info ] [MainThread]: target not specified in profile 'path', using 'default'
+[0m10:48:37.847592 [info ] [MainThread]: target not specified in profile 'schema', using 'default'
+[0m10:48:37.847592 [error] [MainThread]: Encountered an error:
+argument of type 'int' is not iterable
+[0m10:48:37.850099 [error] [MainThread]: Traceback (most recent call last):
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\cli\main.py", line 406, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\task\debug.py", line 120, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\task\debug.py", line 211, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 403, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 369, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 315, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Lib\site-packages\dbt\config\profile.py", line 274, in render_profile
+    elif "target" in raw_profile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+[0m10:48:37.851133 [debug] [MainThread]: Command `dbt debug` failed at 10:48:37.851133 after 0.09 seconds
+[0m10:48:37.852135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D177FD990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D177FD8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D10F459D0>]}
+[0m10:48:37.852135 [debug] [MainThread]: Flushing usage events
+[0m10:50:47.595766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028069D412D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002806994D990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028069D7C3D0>]}
+
+
+============================== 10:50:47.600285 | 6e40bdb7-cc5d-48f8-801f-35db195c1f46 ==============================
+[0m10:50:47.600285 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:50:47.601507 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug --config-dir', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:50:47.620899 [info ] [MainThread]: To view your profiles.yml file, run:
+
+start C:\Users\lalin\.dbt
+[0m10:50:47.622475 [debug] [MainThread]: Command `dbt debug` succeeded at 10:50:47.622475 after 0.14 seconds
+[0m10:50:47.622475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028069D4DD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028069D3FE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028063525710>]}
+[0m10:50:47.623474 [debug] [MainThread]: Flushing usage events
+[0m10:52:23.210204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F65AFB790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F62F6FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F65629410>]}
+
+
+============================== 10:52:23.214257 | 56964883-96e6-4c90-9b41-a81a7ef9bba6 ==============================
+[0m10:52:23.214257 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:52:23.215255 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:52:23.236452 [info ] [MainThread]: dbt version: 1.8.2
+[0m10:52:23.237453 [info ] [MainThread]: python version: 3.11.9
+[0m10:52:23.238453 [info ] [MainThread]: python path: E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\.venv\Scripts\python.exe
+[0m10:52:23.238453 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m10:52:23.244553 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m10:52:33.383722 [info ] [MainThread]: Using profiles dir at C:\Users\lalin\.dbt
+[0m10:52:33.384719 [info ] [MainThread]: Using profiles.yml file at C:\Users\lalin\.dbt\profiles.yml
+[0m10:52:33.385718 [info ] [MainThread]: Using dbt_project.yml file at E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\dbt_project.yml
+[0m10:52:33.386718 [info ] [MainThread]: Configuration:
+[0m10:52:33.386718 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:52:33.387804 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:52:33.387804 [info ] [MainThread]: Required dependencies:
+[0m10:52:33.389310 [debug] [MainThread]: Executing "git --help"
+[0m10:52:33.484156 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:52:33.485155 [debug] [MainThread]: STDERR: "b''"
+[0m10:52:33.485155 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:52:33.486160 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:52:33.487158 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:52:33.488157 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "nyc_parking_violations", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m10:52:33.489158 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\dbt_project.yml> not found
+
+[0m10:52:33.490172 [debug] [MainThread]: Command `dbt debug` failed at 10:52:33.490172 after 10.43 seconds
+[0m10:52:33.491182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F5F1F55D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F65AE8C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F65B348D0>]}
+[0m10:52:33.491182 [debug] [MainThread]: Flushing usage events
+[0m19:53:41.014790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABB94F810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABB9221D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABB52D490>]}
+
+
+============================== 19:53:41.018501 | 84adc23a-0d8d-4030-b3cb-10aafff2bedd ==============================
+[0m19:53:41.018501 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:53:41.019212 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m19:53:41.019212 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:53:41.020216 [debug] [MainThread]: Command `dbt run` failed at 19:53:41.020216 after 0.07 seconds
+[0m19:53:41.020216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABB92DB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABB960A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABB923090>]}
+[0m19:53:41.020216 [debug] [MainThread]: Flushing usage events
+[0m19:59:18.894508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F586B090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F52DB2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F5860B50>]}
+
+
+============================== 19:59:18.898884 | b9d01bdd-4af7-44b0-af5a-a8b46bd0b676 ==============================
+[0m19:59:18.898884 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:59:18.899889 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\lalin\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:59:18.899889 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\Data_Engineer_Portfolio\Data Engineer Portfolio\DBT_with_Neon\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:59:18.900888 [debug] [MainThread]: Command `dbt run` failed at 19:59:18.900888 after 0.08 seconds
+[0m19:59:18.900888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F5875F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F5876250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F453D8D0>]}
+[0m19:59:18.901888 [debug] [MainThread]: Flushing usage events

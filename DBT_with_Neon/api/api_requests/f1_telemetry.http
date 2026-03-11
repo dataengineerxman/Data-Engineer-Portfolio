@@ -1,0 +1,14 @@
+### GET request to example server
+### 1. All 2024 Race sessions
+GET https://api.openf1.org/v1/sessions?year=2024
+
+###
+
+### 2. Hamilton telemetry (Bahrain 2024 Race)
+GET https://api.openf1.org/v1/drivers?session_key=9472
+###
+
+### 3. Verstappen telemetry (Bahrain 2024 Race)
+GET https://api.openf1.org/v1/laps?session_key=9472&driver_number=44
+
+###
