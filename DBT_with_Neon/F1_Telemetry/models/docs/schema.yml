@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: silver_drivers
+    description: Drivers transformation
+    columns:
+      - name: driver_id
+        description: '{{doc("driver_id")}}'
+      - name: driver_number
+        description: '{{doc("driver_number")}}'
+      - name: full_name
+        description: '{{doc("full_name")}}'
+      - name: short_name
+        description: '{{doc("short_name")}}'
+      - name: first_name
+        description: '{{doc("first_name")}}'
+      - name: last_name
+        description: '{{doc("last_name")}}'
+      - name: racing_team
+        description: '{{doc("racing_team")}}'
+
+  - name: silver_teams
+    description: Racing Teams Transformations
+    columns:
+      - name: team_id
+        description: '{{doc("team_id")}}'
+      - name: team_name
+        description: '{{doc("team_name")}}'
+      - name: team_colour_code
+        description: '{{doc("team_colour_code")}}'
+      - name: team_colour
+        description: '{{doc("team_colour")}}'
+
+
+  - name: gold_driver_points
+    description: Points earned by the Drivers
+    columns:
+      - name: driver_id
+        description: '{{doc("driver_id")}}'
+      - name: full_name
+        description: '{{doc("full_name")}}'
+      - name: total_points
+        description: '{{doc("total_points")}}'
+
