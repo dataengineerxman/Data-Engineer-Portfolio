@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/764700bf-8c8e-4691-8b3e-12b4f73f395f/console.sql" value="764700bf-8c8e-4691-8b3e-12b4f73f395f" />
+    <file url="file://$PROJECT_DIR$/CTEs/ctes.sql" value="764700bf-8c8e-4691-8b3e-12b4f73f395f" />
+    <file url="file://$PROJECT_DIR$/DATAWAREHOUSE/subqueries/result_types_bootcamp.sql" value="764700bf-8c8e-4691-8b3e-12b4f73f395f" />
+    <file url="file://$PROJECT_DIR$/DATAWAREHOUSE/subqueries/subqueries_Bootcamp.sql" value="764700bf-8c8e-4691-8b3e-12b4f73f395f" />
+    <file url="file://$PROJECT_DIR$/DATAWAREHOUSE/windows_functions/windows_functions_bootcampe.sql" value="764700bf-8c8e-4691-8b3e-12b4f73f395f" />
+    <file url="file://$PROJECT_DIR$/SubQueries/subqueries.sql" value="764700bf-8c8e-4691-8b3e-12b4f73f395f" />
+  </component>
+</project>

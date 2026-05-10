@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a74d2be4-6b0a-4a15-bf3f-3523db834e00" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_E:/Data_Engineer_Portfolio/Data Engineer Portfolio" value="3CiCslO1Uxd3HqFWn9AFpLmkpPn" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="3CiCslO1Uxd3HqFWn9AFpLmkpPn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Data_Engineer_Portfolio/Data Engineer Portfolio",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="dbt.Run dbt build">
+    <configuration name="Run dbt build" type="DbtRunConfiguration" factoryName="DbtRunConfiguration">
+      <option name="dbtCommand" value="build" />
+      <module name="Data Engineer Portfolio" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run dbt debug" type="DbtRunConfiguration" factoryName="DbtRunConfiguration">
+      <option name="dbtCommand" value="debug" />
+      <module name="Data Engineer Portfolio" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run dbt list" type="DbtRunConfiguration" factoryName="DbtRunConfiguration">
+      <option name="dbtCommand" value="list" />
+      <module name="Data Engineer Portfolio" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run dbt run" type="DbtRunConfiguration" factoryName="DbtRunConfiguration">
+      <option name="dbtCommand" value="run" />
+      <module name="Data Engineer Portfolio" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run dbt test" type="DbtRunConfiguration" factoryName="DbtRunConfiguration">
+      <option name="dbtCommand" value="test" />
+      <module name="Data Engineer Portfolio" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.30387.173" />
+        <option value="bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a74d2be4-6b0a-4a15-bf3f-3523db834e00" name="Changes" comment="" />
+      <created>1776859212844</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776859212844</updated>
+      <workItem from="1776859214088" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
